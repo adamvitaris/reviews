@@ -1,9 +1,11 @@
 * {
 	font-family: 'Montserrat', sans-serif;
+	background-color: #f1f5f8;
 }
 
 .title{
-	margin: 40px;
+	color: #102a42;
+	margin-top: 10px;
 	padding: 10px;
 	text-align: center;
 }
@@ -12,19 +14,34 @@ hr {
 	background-color: #49a6e9;
 	border: none;
 	border-radius: 15px;
-	width: 25%;
+	width: 120px;
 	height: 5px;
-	
 }
 
 article {
+	height: 400px;
+	width: 700px;
+	margin: auto;
 	text-align: center;
+	justify-content: center;
+	box-shadow: 0 4px 8px #102a42;
+}
+
+.text {
+	margin: auto;
+}
+
+#info {
+	padding-left: 40px;
+	padding-right: 40px;
+	overflow-wrap: break-word;
 }
 
 img {
+	padding-top: 20px;
 	border-radius: 50%;
-	height: auto;
-
+	height: 180px;
+	width: 180px;
 }
 
 
@@ -33,7 +50,7 @@ img {
     background-color: white;
     color: #49a6e9;
     cursor: pointer;
-    padding: 1px;
+    padding: 3px;
     margin-right: 50px;
 }
 
