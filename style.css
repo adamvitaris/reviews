@@ -5,8 +5,8 @@
 
 .title{
 	color: #102a42;
-	margin-top: 10px;
-	padding: 10px;
+	margin-bottom: 0px;
+	padding-bottom: 10px;
 	text-align: center;
 }
 
@@ -19,7 +19,7 @@ hr {
 }
 
 article {
-	height: 400px;
+	height: 440px;
 	width: 700px;
 	margin: auto;
 	text-align: center;
@@ -34,16 +34,54 @@ article {
 #info {
 	padding-left: 40px;
 	padding-right: 40px;
-	overflow-wrap: break-word;
+}
+
+.img-container {
+	padding-top: 10px;
+}
+
+.dot-img {
+	width: 60px;
+	height: 60px;
+	margin-bottom: 100px;
+	margin-left: 60px;
 }
 
 img {
-	padding-top: 20px;
 	border-radius: 50%;
-	height: 180px;
-	width: 180px;
+	height: 160px;
+	width: 160px;
+	z-index: 2;
+	position: relative;
 }
 
+.dot {
+	z-index: 1;
+	position: relative;
+	height: 160px;
+	width: 160px;
+	background-color: #49a6e9;
+	margin-left: -160px;
+	margin-bottom: 4px;
+	border-radius: 50%;
+	display: inline-block;
+  }
+
+.btn-container {
+	padding-bottom: 5px;
+}
+
+.random-btn {
+	border-radius: 5px;
+	box-shadow: 0 4px 8px #102a42;
+	transition-duration: 0.5s;
+	cursor: pointer;
+}
+
+.random-btn:hover {
+	background-color: #49a6e9;
+	color: #102a42;
+}
 
 .chevron {
     border: none;
@@ -51,7 +89,8 @@ img {
     color: #49a6e9;
     cursor: pointer;
     padding: 3px;
-    margin-right: 50px;
+    margin-right: 5px;
+	margin-left: 5px;
 }
 
 
