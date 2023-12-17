@@ -1,7 +1,37 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.title{
+	margin: 40px;
+	padding: 10px;
+	text-align: center;
+}
+
+hr {
+	background-color: #49a6e9;
+	border: none;
+	border-radius: 15px;
+	width: 25%;
+	height: 5px;
+	
+}
+
+article {
+	text-align: center;
+}
+
+img {
+	border-radius: 50%;
+	height: auto;
+
+}
+
+
 .chevron {
     border: none;
     background-color: white;
-    color: blue;
+    color: #49a6e9;
     cursor: pointer;
     padding: 1px;
     margin-right: 50px;
