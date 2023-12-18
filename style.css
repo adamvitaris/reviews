@@ -5,9 +5,15 @@
 
 .title{
 	color: #102a42;
-	margin-bottom: 0px;
 	padding-bottom: 10px;
 	text-align: center;
+}
+
+h1 {
+	margin-top: 3px;
+	margin-bottom: 0px;
+	padding: 3px;
+	font-size: 40px;
 }
 
 hr {
@@ -16,6 +22,8 @@ hr {
 	border-radius: 15px;
 	width: 120px;
 	height: 5px;
+	margin-top: 0px;
+	padding-top: 0px;
 }
 
 article {
@@ -24,7 +32,8 @@ article {
 	margin: auto;
 	text-align: center;
 	justify-content: center;
-	box-shadow: 0 4px 8px #102a42;
+	box-shadow: 0 2px 4px #102a42;
+	border-radius: 10px;
 }
 
 .text {
@@ -41,10 +50,12 @@ article {
 }
 
 .dot-img {
+	position: relative;
+	z-index: 3;
 	width: 60px;
 	height: 60px;
 	margin-bottom: 100px;
-	margin-left: 60px;
+	margin-right: -50px;
 }
 
 img {
@@ -72,6 +83,9 @@ img {
 }
 
 .random-btn {
+	background-color: white;
+	color: #49a6e9;
+	border-color: #49a6e9;
 	border-radius: 5px;
 	box-shadow: 0 4px 8px #102a42;
 	transition-duration: 0.5s;
@@ -93,14 +107,13 @@ img {
 	margin-left: 5px;
 }
 
-
 .chevron::before {
 	border-style: solid;
 	border-width: 0.25em 0.25em 0 0;
     border-radius: 20%;
 	content: '';
 	display: inline-block;
-	height: 0.45em;
+	height: 0.50em;
 	left: 0.15em;
 	position: relative;
 	top: 0.15em;
