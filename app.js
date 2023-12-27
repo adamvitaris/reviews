@@ -1,17 +1,17 @@
 const reviews = [
     {
         id: 1,
+        name: "Sara Jones",
+        job: "UX Designer",
+        img: "Images\woman1.jpg",
+        text: "As a UX designer, I focus on creating intuitive interfaces through user-centered design and thorough research. My creative problem-solving approach, coupled with effective team collaboration, results in clear, engaging, and easily navigable products." 
+    },
+    {
+        id: 2,
         name: "Susan Smith",
         job: "Web Developer",
         img: "Images\woman2.jpg",
         text: "I leverage advanced technical skills and creative problem-solving to craft websites that exceed industry standards.My commitment to clear communication ensures a collaborative and streamlined development process."
-    },
-    {
-        id: 2,
-        name: "Sara Jones",
-        job: "UX Designer",
-        img: "Images\woman1.jpg",
-        text: "As a UX designer, I focus on creating intuitive interfaces through user-centered design and thorough research. My creative problem-solving approach, coupled with effective team collaboration, results in clear, engaging, and easily navigable products."
     },
     {
         id: 3,
@@ -22,16 +22,20 @@ const reviews = [
     }
 ];
 
-const leftbtn = document.querySelector(".left");
-const rightbtn = document.querySelector(".right");
-const randbtn = document.querySelector(".random-btn");
+let currentIndex = 0;
 
-leftbtn.addEventListener("click", function() {
-    console.log("fasz");
-});
+const leftBtn = document.querySelector(".left");
+const rightBtn = document.querySelector(".right");
+const randBtn = document.querySelector(".random-btn");
+const img = document.getElementById("person-img");
+const name = document.getElementById("author");
+const job = document.getElementById("job");
+const text = document.getElementById("info");
 
-function getNewReview() {
-    document.getElementById("author").innerHTML = Object.values(reviews);
+
+function getNewReview(index) {
+    const review = reviews[index];
+    img.src = review.img
 }
 
 getNewReview();
