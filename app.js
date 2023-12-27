@@ -51,4 +51,10 @@ rightBtn.addEventListener("click", function() {
     getNewReview(currentIndex);
 })
 
+randBtn.addEventListener("click", function() {
+    currentIndex = Math.floor(Math.random() * 3);
+    getNewReview(currentIndex);
+    console.log(currentIndex);
+})
+
 getNewReview(currentIndex);
